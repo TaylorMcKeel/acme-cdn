@@ -1,6 +1,22 @@
+* {
+  background-color: #352d41;
+}
+
 .selected {
-  background-color: aqua;
+  background-color: #7952b3;
 }
 
 span {
+  text-decoration: none;
+  background-color: #454d55;
+  padding: 1rem;
+}
+
+span > a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  color: white;
 }

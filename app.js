@@ -32,14 +32,14 @@ const renderTop = (products, companies) => {
   prodLink.innerText = `Products(${products.length})`;
   prodLink.href = "#products";
   if (hash === "products") {
-    prodLink.classList.add("selected");
+    prodSpan.classList.add("selected");
   }
 
   const compLink = document.createElement("a");
   compLink.innerText = `Companies(${companies.length})`;
   compLink.href = "#companies";
   if (hash === "companies") {
-    compLink.classList.add("selected");
+    compSpan.classList.add("selected");
   }
 
   prodSpan.append(prodLink);
@@ -72,7 +72,7 @@ const renderTable = (products, companies) => {
       })
       .join("");
     const html = `
-      <table class='table'>
+      <table class='table table-dark table-striped'>
         <thead>
             <tr>
                 ${headers}
@@ -105,7 +105,7 @@ const renderTable = (products, companies) => {
       })
       .join("");
     const html = `
-        <table class='table'>
+        <table class='table table-dark table-striped'>
           <thead>
               <tr>
                   ${headers}
